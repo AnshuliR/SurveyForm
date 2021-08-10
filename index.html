@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Survey Form</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     
+     <div class="container">
+         <header class="header">
+             <h1 id="title">
+                Movie Viewing Survey
+                <br><br>
+             </h1>
+         </header>
+         <form>
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" class="input">
+            </div>
+            <div class="form-group">
+                <label>Email Address:</label>
+                <input type="text" class="input">
+            </div>
+            <div class="form-group">
+                <label>Phone Number:</label>
+                <input type="number" class="input">
+            </div>
+            <br>
+            <div class="formgroup">
+                <p>1. What do you prefer?</p>
+                <br>
+                <input type="radio" id="tv shows" name="preference" value="TV Shows">
+                <label for="tv shows">TV Shows</label><br>
+                <input type="radio" id="movies" name="preference" value="Movies">
+                <label for="movies">Movies</label><br>
+            </div>
+            <div class="formgroup">
+                <p>2. How often do you watch TV shows?</p>
+                <br>
+                <input type="radio" id="extremely often" name="shows" value="Extremely often">
+                <label for="extremely often">Extremely often</label><br>
+                <input type="radio" id="slightly often" name="shows" value="Slightly often">
+                <label for="slightly often">Slightly often</label><br>
+                <input type="radio" id="not at all often" name="shows" value="Not at all often">
+                <label for="not at all often">Not at all often</label><br>
+            </div>
+            <div class="formgroup">
+                <p>3. Which genre of movies or shows do you prefer?</p>
+                <br>
+                <input type="radio" id="action" name="genre" value="Action">
+                <label for="action">Action</label><br>
+                <input type="radio" id="comedy" name="genre" value="Comedy">
+                <label for="comedy">Comedy</label><br>
+                <input type="radio" id="fantasy" name="genre" value="Fantasy">
+                <label for="fantasy">Fantasy</label><br>
+                <input type="radio" id="horror" name="genre" value="Horror">
+                <label for="horror">Horror</label><br>
+                <input type="radio" id="romance" name="genre" value="Romance">
+                <label for="romance">Romance</label><br>
+                <input type="radio" id="other" name="genre" value="Other">
+                <label for="other">Other</label><br>
+            </div>
+            <div class="formgroup">
+                <p>4. Watching movies or shows can make you feel like?</p>
+                <br>
+                <input type="checkbox" id="relaxed" name="mood" value="Relaxed">
+                <label for="relaxed">Relaxed</label><br>
+                <input type="checkbox" id="learn something new" name="mood" value="Learn something new">
+                <label for=""learn something new>Learn something new</label><br>
+                <input type="checkbox" id="feel like wasting time" name="mood" value="Feel like wasting time">
+                <label for="feel like wasting time">Feel like wasting time</label><br>
+                <input type="checkbox" id="other" name="mood" value="Other">
+                <label for="other">Other</label><br>
+            </div>
+            <br>
+            <div class="form-group">
+                <p>Thank you for taking out your time to fill this survey.</p>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </form>
+     </div>   
+ </body>
+ </html>

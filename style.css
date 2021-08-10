@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root
+{
+    --color-white: #f3f3f3;
+    --color-darkblue: #796ec8;
+    --color-darkblue-alpha: rgba(13,138,187,8);
+    --color-green: #21eb6e
+}
+*,*::before,*::after
+{
+    box-sizing: border-box;
+}
+body::before
+{
+    content: '';
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 2000px;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(215deg,rgba(75, 113, 179, 0.8),rgba(124, 192, 147, 0.8));
+    background-size: cover;
+    
+}
+.container
+{
+    max-width: 800px;
+    max-height: 1500px;
+    width: 100%;
+    background: url('https://thumbs.dreamstime.com/b/watching-movie-go-to-cinema-popcorn-clapperboard-white-background-top-view-mockup-go-to-cinema-popcorn-155869924.jpg');
+    background-size: 100% 800px;
+    margin: 20px auto; 
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+#title
+{
+    color: black;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container .form
+{
+    width: 100%;
+}
+.container .form-group 
+{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.container .form-group label
+{
+    width: 200px;
+    color: black;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.container .form-group .input
+{
+    width: 50%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.container .formgroup
+{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.container .formgroup p
+{
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(235, 16, 16);
+}
+.container .form-group p
+{
+    font-size: 20px;
+}
+.container .form-group .btn
+{
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 15px;
+    border: 10;
+    border-color: black;
+    background: #f3f3f3;
+    cursor: pointer;
+    border-radius: 3px;
+    
+}
+.container .form-group .btn:hover
+{
+    background: lightslategrey;
+}
